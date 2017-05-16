@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>3.2</version>
+    <date>2017-05-16T09:34:46Z</date>
+    <value_maps>
+        <value_map>
+            <name>RuckusAPStatus</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>Disconnected</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Connected</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>ApprovalPending</newvalue>
+                </mapping>
+                <mapping>
+                    <value>3</value>
+                    <newvalue>UpgradingFirmware</newvalue>
+                </mapping>
+                <mapping>
+                    <value>4</value>
+                    <newvalue>Provisioning</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+        <value_map>
+            <name>Ruckus ZD 1200 BcastSSID</name>
+            <mappings>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Hidden</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>Visible</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+        <value_map>
+            <name>Ruckus ZD1200 WLAN Type</name>
+            <mappings>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Guest access</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>Private access</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+        <value_map>
+            <name>ruckusZDEthStatus</name>
+            <mappings>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Up</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>Down</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+    </value_maps>
+</zabbix_export>
