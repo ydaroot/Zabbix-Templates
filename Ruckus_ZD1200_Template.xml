@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.2</version>
-    <date>2017-05-16T07:44:02Z</date>
+    <date>2017-05-18T12:32:40Z</date>
     <groups>
         <group>
-            <name>ECL Templates</name>
+            <name>Templates</name>
         </group>
     </groups>
     <templates>
         <template>
-            <template>Ruckus ZD Template</template>
-            <name>ECL Ruckus ZD Template</name>
+            <template>Ruckus ZD1200 Template</template>
+            <name>Ruckus ZD1200 Template</name>
             <description/>
             <groups>
                 <group>
@@ -44,7 +44,7 @@
                 <item>
                     <name>ZoneDirector CPU Utilization</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.25053.1.2.1.1.1.5.58.0</snmp_oid>
                     <key>ruckusZDSystemCPUUTIL.0</key>
@@ -73,7 +73,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMP_PORT}</port>
                     <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -87,7 +87,7 @@
                 <item>
                     <name>ZoneDIrector Licensed AP</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.25053.1.2.1.1.1.1.12.0</snmp_oid>
                     <key>ruckusZDSystemLicensedAP.0</key>
@@ -116,7 +116,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMP_PORT}</port>
                     <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -130,7 +130,7 @@
                 <item>
                     <name>ZoneDirector MAC Adress</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.25053.1.2.1.1.1.1.3.0</snmp_oid>
                     <key>ruckusZDSystemMacAddr.0</key>
@@ -159,7 +159,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMP_PORT}</port>
                     <description/>
                     <inventory_link>12</inventory_link>
                     <applications>
@@ -173,7 +173,7 @@
                 <item>
                     <name>ZoneDirector Memory Utilization</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.25053.1.2.1.1.1.5.59.0</snmp_oid>
                     <key>ruckusZDSystemMemUTIL.0</key>
@@ -202,7 +202,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMP_PORT}</port>
                     <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -216,7 +216,7 @@
                 <item>
                     <name>ZoneDirector System Model</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.25053.1.2.1.1.1.1.9.0</snmp_oid>
                     <key>ruckusZDSystemModel.0</key>
@@ -245,7 +245,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMP_PORT}</port>
                     <description/>
                     <inventory_link>29</inventory_link>
                     <applications>
@@ -259,7 +259,7 @@
                 <item>
                     <name>ZoneDirector System Name</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.25053.1.2.1.1.1.1.1.0</snmp_oid>
                     <key>ruckusZDSystemName.0</key>
@@ -288,7 +288,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMP_PORT}</port>
                     <description/>
                     <inventory_link>3</inventory_link>
                     <applications>
@@ -302,7 +302,7 @@
                 <item>
                     <name>ZoneDirector Peer Status</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.25053.1.2.1.1.1.1.31.0</snmp_oid>
                     <key>ruckusZDSystemPeerStatus.0</key>
@@ -331,7 +331,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMP_PORT}</port>
                     <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -345,7 +345,7 @@
                 <item>
                     <name>ZoneDirector Serial Number</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.25053.1.2.1.1.1.1.15.0</snmp_oid>
                     <key>ruckusZDSystemSerialNumber.0</key>
@@ -374,7 +374,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMP_PORT}</port>
                     <description/>
                     <inventory_link>8</inventory_link>
                     <applications>
@@ -388,11 +388,11 @@
                 <item>
                     <name>ZoneDirector Total Users</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.25053.1.2.1.1.1.15.30.0</snmp_oid>
                     <key>ruckusZDSystemStatsAllNumSta</key>
-                    <delay>900</delay>
+                    <delay>3600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -417,7 +417,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMP_PORT}</port>
                     <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -431,11 +431,11 @@
                 <item>
                     <name>ZoneDirector Total Auth Clients</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.25053.1.2.1.1.1.15.2.0</snmp_oid>
                     <key>ruckusZDSystemStatsNumSta.0</key>
-                    <delay>300</delay>
+                    <delay>3600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -460,7 +460,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMP_PORT}</port>
                     <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -474,7 +474,7 @@
                 <item>
                     <name>ZoneDirector Status</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.25053.1.2.1.1.1.1.30.0</snmp_oid>
                     <key>ruckusZDSystemStatus.0</key>
@@ -503,7 +503,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMP_PORT}</port>
                     <description/>
                     <inventory_link>0</inventory_link>
                     <applications>
@@ -517,7 +517,7 @@
                 <item>
                     <name>ZoneDirector System Version</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.25053.1.2.1.1.1.1.18.0</snmp_oid>
                     <key>ruckusZDSystemVersion.0</key>
@@ -546,7 +546,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMP_PORT}</port>
                     <description/>
                     <inventory_link>5</inventory_link>
                     <applications>
@@ -562,7 +562,7 @@
                 <discovery_rule>
                     <name>Ruckus APs</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <snmp_oid>discovery[{#SNMPVALUE},.1.3.6.1.4.1.25053.1.2.2.1.1.2.1.1.2]</snmp_oid>
                     <key>AP-[{#SNMPVALUE}]</key>
                     <delay>3600</delay>
@@ -583,7 +583,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port>161</port>
+                    <port>{$SNMP_PORT}</port>
                     <filter>
                         <evaltype>0</evaltype>
                         <formula/>
@@ -595,7 +595,7 @@
                         <item_prototype>
                             <name>AP $1 IP Address</name>
                             <type>4</type>
-                            <snmp_community>public</snmp_community>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.25053.1.2.2.1.1.2.1.1.10.{#SNMPINDEX}</snmp_oid>
                             <key>ruckusZDWLANAPIPAdd[{#SNMPVALUE}]</key>
@@ -624,7 +624,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMP_PORT}</port>
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
@@ -639,7 +639,7 @@
                         <item_prototype>
                             <name>AP $1 Nb Clients</name>
                             <type>4</type>
-                            <snmp_community>public</snmp_community>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.25053.1.2.2.1.1.2.1.1.15.{#SNMPINDEX}</snmp_oid>
                             <key>ruckusZDWLANAPNumSta[{#SNMPVALUE}]</key>
@@ -668,7 +668,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMP_PORT}</port>
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
@@ -683,7 +683,7 @@
                         <item_prototype>
                             <name>AP $1 Status</name>
                             <type>4</type>
-                            <snmp_community>public</snmp_community>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>.1.3.6.1.4.1.25053.1.2.2.1.1.2.1.1.3.{#SNMPINDEX}</snmp_oid>
                             <key>ruckusZDWLANAPStatus[{#SNMPVALUE}]</key>
@@ -712,7 +712,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMP_PORT}</port>
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
@@ -729,7 +729,7 @@
                         <item_prototype>
                             <name>AP $1 detected Rogue AP</name>
                             <type>4</type>
-                            <snmp_community>public</snmp_community>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.25053.1.2.2.1.1.2.1.1.16.{#SNMPINDEX}</snmp_oid>
                             <key>ruckusZDWLANRogue[{#SNMPVALUE}]</key>
@@ -758,7 +758,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMP_PORT}</port>
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
@@ -785,7 +785,13 @@
                             <description/>
                             <type>0</type>
                             <manual_close>1</manual_close>
-                            <dependencies/>
+                            <dependencies>
+                                <dependency>
+                                    <name>{HOST.NAME} is unavailable by ICMP</name>
+                                    <expression>{Ruckus ZD1200 Template:icmpping.max(#3)}=0</expression>
+                                    <recovery_expression/>
+                                </dependency>
+                            </dependencies>
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
@@ -801,7 +807,13 @@
                             <description/>
                             <type>0</type>
                             <manual_close>1</manual_close>
-                            <dependencies/>
+                            <dependencies>
+                                <dependency>
+                                    <name>{HOST.NAME} is unavailable by ICMP</name>
+                                    <expression>{Ruckus ZD1200 Template:icmpping.max(#3)}=0</expression>
+                                    <recovery_expression/>
+                                </dependency>
+                            </dependencies>
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
@@ -817,7 +829,13 @@
                             <description/>
                             <type>0</type>
                             <manual_close>1</manual_close>
-                            <dependencies/>
+                            <dependencies>
+                                <dependency>
+                                    <name>{HOST.NAME} is unavailable by ICMP</name>
+                                    <expression>{Ruckus ZD1200 Template:icmpping.max(#3)}=0</expression>
+                                    <recovery_expression/>
+                                </dependency>
+                            </dependencies>
                             <tags/>
                         </trigger_prototype>
                     </trigger_prototypes>
@@ -827,7 +845,7 @@
                 <discovery_rule>
                     <name>WLANs</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <snmp_oid>discovery[{#SNMPVALUE},.1.3.6.1.4.1.25053.1.2.2.1.1.1.1.1.1]</snmp_oid>
                     <key>RuckusZDWLANSSID-[{#SNMPVALUE}]</key>
                     <delay>3600</delay>
@@ -848,7 +866,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMP_PORT}</port>
                     <filter>
                         <evaltype>0</evaltype>
                         <formula/>
@@ -860,7 +878,7 @@
                         <item_prototype>
                             <name>$1 Authentication method</name>
                             <type>4</type>
-                            <snmp_community>public</snmp_community>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.25053.1.2.2.1.1.1.1.1.3.{#SNMPINDEX}</snmp_oid>
                             <key>RuckusZDWLANAuth[{#SNMPVALUE}]</key>
@@ -889,7 +907,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMP_PORT}</port>
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
@@ -904,7 +922,7 @@
                         <item_prototype>
                             <name>$1 SSID Hidden</name>
                             <type>4</type>
-                            <snmp_community>public</snmp_community>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.25053.1.2.2.1.1.1.1.1.6.{#SNMPINDEX}</snmp_oid>
                             <key>RuckusZDWLANBcastSSID[{#SNMPVALUE}]</key>
@@ -933,7 +951,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMP_PORT}</port>
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
@@ -950,7 +968,7 @@
                         <item_prototype>
                             <name>$1 Description</name>
                             <type>4</type>
-                            <snmp_community>public</snmp_community>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.25053.1.2.2.1.1.1.1.1.2.{#SNMPINDEX}</snmp_oid>
                             <key>RuckusZDWLANDesc[{#SNMPVALUE}]</key>
@@ -979,7 +997,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMP_PORT}</port>
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
@@ -994,7 +1012,7 @@
                         <item_prototype>
                             <name>$1 Encryption Type</name>
                             <type>4</type>
-                            <snmp_community>public</snmp_community>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.25053.1.2.2.1.1.1.1.1.4.{#SNMPINDEX}</snmp_oid>
                             <key>RuckusZDWLANEnc[{#SNMPVALUE}]</key>
@@ -1023,7 +1041,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMP_PORT}</port>
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
@@ -1038,7 +1056,7 @@
                         <item_prototype>
                             <name>$1 Nb AP</name>
                             <type>4</type>
-                            <snmp_community>public</snmp_community>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.25053.1.2.2.1.1.1.1.1.11.{#SNMPINDEX}</snmp_oid>
                             <key>RuckusZDWLANNumAP[{#SNMPVALUE}]</key>
@@ -1067,7 +1085,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMP_PORT}</port>
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
@@ -1082,7 +1100,7 @@
                         <item_prototype>
                             <name>$1 Nb Client</name>
                             <type>4</type>
-                            <snmp_community>public</snmp_community>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.25053.1.2.2.1.1.1.1.1.12.{#SNMPINDEX}</snmp_oid>
                             <key>RuckusZDWLANNumClients[{#SNMPVALUE}]</key>
@@ -1111,7 +1129,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMP_PORT}</port>
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
@@ -1126,7 +1144,7 @@
                         <item_prototype>
                             <name>$1 Nb Device Capacity Disassociation</name>
                             <type>4</type>
-                            <snmp_community>public</snmp_community>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.25053.1.2.2.1.1.1.1.1.38.{#SNMPINDEX}</snmp_oid>
                             <key>RuckusZDWLANNumDCDisassociation[{#SNMPVALUE}]</key>
@@ -1155,7 +1173,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMP_PORT}</port>
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
@@ -1170,7 +1188,7 @@
                         <item_prototype>
                             <name>$1 Type</name>
                             <type>4</type>
-                            <snmp_community>public</snmp_community>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.25053.1.2.2.1.1.1.1.1.5.{#SNMPINDEX}</snmp_oid>
                             <key>RuckusZDWLANType[{#SNMPVALUE}]</key>
@@ -1199,7 +1217,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMP_PORT}</port>
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
@@ -1228,7 +1246,13 @@
                             <description/>
                             <type>0</type>
                             <manual_close>1</manual_close>
-                            <dependencies/>
+                            <dependencies>
+                                <dependency>
+                                    <name>{HOST.NAME} is unavailable by ICMP</name>
+                                    <expression>{Ruckus ZD1200 Template:icmpping.max(#3)}=0</expression>
+                                    <recovery_expression/>
+                                </dependency>
+                            </dependencies>
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
@@ -1244,7 +1268,13 @@
                             <description/>
                             <type>0</type>
                             <manual_close>1</manual_close>
-                            <dependencies/>
+                            <dependencies>
+                                <dependency>
+                                    <name>{HOST.NAME} is unavailable by ICMP</name>
+                                    <expression>{Ruckus ZD1200 Template:icmpping.max(#3)}=0</expression>
+                                    <recovery_expression/>
+                                </dependency>
+                            </dependencies>
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
@@ -1260,7 +1290,13 @@
                             <description/>
                             <type>0</type>
                             <manual_close>1</manual_close>
-                            <dependencies/>
+                            <dependencies>
+                                <dependency>
+                                    <name>{HOST.NAME} is unavailable by ICMP</name>
+                                    <expression>{Ruckus ZD1200 Template:icmpping.max(#3)}=0</expression>
+                                    <recovery_expression/>
+                                </dependency>
+                            </dependencies>
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
@@ -1276,7 +1312,13 @@
                             <description/>
                             <type>0</type>
                             <manual_close>1</manual_close>
-                            <dependencies/>
+                            <dependencies>
+                                <dependency>
+                                    <name>{HOST.NAME} is unavailable by ICMP</name>
+                                    <expression>{Ruckus ZD1200 Template:icmpping.max(#3)}=0</expression>
+                                    <recovery_expression/>
+                                </dependency>
+                            </dependencies>
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
@@ -1292,7 +1334,13 @@
                             <description/>
                             <type>0</type>
                             <manual_close>1</manual_close>
-                            <dependencies/>
+                            <dependencies>
+                                <dependency>
+                                    <name>{HOST.NAME} is unavailable by ICMP</name>
+                                    <expression>{Ruckus ZD1200 Template:icmpping.max(#3)}=0</expression>
+                                    <recovery_expression/>
+                                </dependency>
+                            </dependencies>
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
@@ -1308,7 +1356,13 @@
                             <description/>
                             <type>0</type>
                             <manual_close>1</manual_close>
-                            <dependencies/>
+                            <dependencies>
+                                <dependency>
+                                    <name>{HOST.NAME} is unavailable by ICMP</name>
+                                    <expression>{Ruckus ZD1200 Template:icmpping.max(#3)}=0</expression>
+                                    <recovery_expression/>
+                                </dependency>
+                            </dependencies>
                             <tags/>
                         </trigger_prototype>
                     </trigger_prototypes>
@@ -1351,7 +1405,7 @@
                 <discovery_rule>
                     <name>ZD Interfaces</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <snmp_oid>discovery[{#SNMPVALUE},1.3.6.1.4.1.25053.1.2.1.1.1.18.2.1.2]</snmp_oid>
                     <key>ZDEthName[{#SNMPVALUE}]</key>
                     <delay>86400</delay>
@@ -1372,7 +1426,7 @@
                     <password/>
                     <publickey/>
                     <privatekey/>
-                    <port/>
+                    <port>{$SNMP_PORT}</port>
                     <filter>
                         <evaltype>0</evaltype>
                         <formula/>
@@ -1384,7 +1438,7 @@
                         <item_prototype>
                             <name>Status $1</name>
                             <type>4</type>
-                            <snmp_community>public</snmp_community>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.25053.1.2.1.1.1.18.2.1.5.{#SNMPINDEX}</snmp_oid>
                             <key>ruckusZDEthStatus[{#SNMPVALUE}]</key>
@@ -1413,7 +1467,7 @@
                             <password/>
                             <publickey/>
                             <privatekey/>
-                            <port/>
+                            <port>{$SNMP_PORT}</port>
                             <description/>
                             <inventory_link>0</inventory_link>
                             <applications>
@@ -1442,7 +1496,13 @@
                             <description/>
                             <type>0</type>
                             <manual_close>0</manual_close>
-                            <dependencies/>
+                            <dependencies>
+                                <dependency>
+                                    <name>{HOST.NAME} is unavailable by ICMP</name>
+                                    <expression>{Ruckus ZD1200 Template:icmpping.max(#3)}=0</expression>
+                                    <recovery_expression/>
+                                </dependency>
+                            </dependencies>
                             <tags/>
                         </trigger_prototype>
                     </trigger_prototypes>
@@ -1474,7 +1534,13 @@
             <description/>
             <type>0</type>
             <manual_close>1</manual_close>
-            <dependencies/>
+            <dependencies>
+                <dependency>
+                    <name>{HOST.NAME} is unavailable by ICMP</name>
+                    <expression>{Ruckus ZD1200 Template:icmpping.max(#3)}=0</expression>
+                    <recovery_expression/>
+                </dependency>
+            </dependencies>
             <tags/>
         </trigger>
     </triggers>
